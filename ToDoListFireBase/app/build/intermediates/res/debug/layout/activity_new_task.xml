@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txtInputTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/TypeTask"
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/chk_ListTemplate_Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AddTaskInList"
+           
+            android:text="@string/Add" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentAddNewTask"
+        android:name="com.todolist.AddTaskListFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.73" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+         <Button
+             android:id="@+id/btnMarkAsCompleted"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:onClick="MarkCompleted"
+             android:text="@string/MarkCompleted" 
+           
+             />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="DeleteItem"
+        android:text="@string/Delete" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Moosa/AndroidStudioProjects/ToDoListFireBase/app/src/main/res/layout/activity_new_task.xml -->

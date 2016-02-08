@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherLite</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="changeCity">Change City</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToDo List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonaddname">Add Items Todo</string>
+    <string name="starcheckbox">Important</string>
+    <string name="edittext">Enter Message Here</string>
+    <string name="edittexttitle">Enter Title Here</string>
+    <string name="clicktocompletedtask">Move to Completed Task</string>
+    <array name="listitems">
+        <item>Kamran</item>
+        <item>Adnan</item>
+        <item>Moosa</item>
+    </array>
+    <string name="title_activity_finished_items">Finished Task</string>
+    <string name="backbutton">Back to Todo Items</string>
+    <string name="finisheditemsbutton">Finished Items</string>
+
+</resources>

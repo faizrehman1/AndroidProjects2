@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/pictureViewFragmentIdInXml"
+        android:name="example.moosa.com.fragments2prac.PictureView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_picture_view" />
+
+    <fragment
+        android:id="@+id/listViewFragmentIdInXml"
+        android:name="example.moosa.com.fragments2prac.ListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_list" />
+
+</LinearLayout>

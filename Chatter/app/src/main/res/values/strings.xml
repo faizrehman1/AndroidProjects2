@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chatter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Logout</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_login">Login</string>
+</resources>

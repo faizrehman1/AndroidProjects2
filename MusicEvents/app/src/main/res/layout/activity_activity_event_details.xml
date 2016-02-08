@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="moosa.apisample.lastfm.paulo.com.musicevents.ActivityEventDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listrow_bg"
+        android:padding="5dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/detailsBandImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/detailsHeadLiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsBandImage"
+            android:layout_centerHorizontal="true"
+            android:text="HeadLiner"
+            android:textColor="#222"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailsVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsHeadLiner"
+            android:layout_centerHorizontal="true"
+            android:text="Venue"
+            android:textColor="#222"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/detailsWhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsWhen"
+            android:layout_centerHorizontal="true"
+            android:text="Where"
+            android:background="#222"
+
+            android:textColor="#fff"
+
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/detailsWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsVenue"
+            android:layout_centerHorizontal="true"
+            android:textColor="#222"
+
+            android:text="When"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>

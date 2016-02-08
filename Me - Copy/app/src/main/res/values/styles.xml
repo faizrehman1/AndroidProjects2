@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="item1background">
+        <item name="android:background">@drawable/item1clickevent</item>
+    </style>
+
+    <style name="item2background">
+        <item name="android:background">@drawable/item2click</item>
+    </style>
+
+    <style name="item3background">
+        <item name="android:background">@drawable/item3click</item>
+    </style>
+
+    <style name="item4background">
+        <item name="android:background">@drawable/item4background</item>
+    </style>
+
+    <style name="item5background">
+        <item name="android:background">@drawable/item5background</item>
+    </style>
+
+    <style name="item6back">
+        <item name="android:background">@drawable/item6background</item>
+
+    </style>
+
+    <style name="item7back">
+        <item name="android:background">@drawable/item7background</item>
+    </style>
+</resources>

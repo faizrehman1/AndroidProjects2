@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbackground">
+
+    <TextView
+        android:id="@+id/textTitleOfTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lastDate"
+        android:layout_toRightOf="@+id/checkWorkCompleted"
+        android:layout_toStartOf="@+id/lastDate"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textIsSelectable="false"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitleOfTask"
+        android:layout_alignStart="@+id/textTitleOfTask"
+        android:layout_below="@+id/textTitleOfTask"
+        android:layout_toLeftOf="@+id/lastDate"
+        android:layout_toStartOf="@+id/lastDate"
+        android:padding="2dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/checkWorkCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/textDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textDescription"
+        android:padding="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RatingBar
+        android:id="@+id/listItemRatingImporatnce"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:isIndicator="true"
+        android:max="5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:id="@+id/lastDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listItemRatingImporatnce"
+        android:layout_alignRight="@+id/listItemRatingImporatnce"
+        android:layout_below="@+id/listItemRatingImporatnce"
+        android:text="Last Date of Submision"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:id="@+id/deleteItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listItemRatingImporatnce"
+        android:layout_alignEnd="@+id/listItemRatingImporatnce" />
+
+</RelativeLayout>
